@@ -1,2 +1,2 @@
 # SniperSight
- SniperSight - Listener, Backdoor &amp; Keylogger Generator Developed &amp; Maintained By revise7
+ViperVenom - Listener & Spyware Tool Developed and Maintained By Itay Funes Under Revise7
