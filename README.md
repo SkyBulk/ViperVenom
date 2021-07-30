@@ -43,19 +43,19 @@ $ python3 vipervenom.py
 $ gedit client.py
 $ pip3 install -r client_requirements.txt
 ```
-In order to connect computer to the listener(you, most likely) you need to edit a few things in the file
-and as well as installing a few Python extentions, for now. The client must have the lastest Python
-installation, and the Python extentions used in the client.py, but you can use the Py2Exe to create
+To connect a computer to the listener(you, most likely) you need to edit a few things in the file
+and as well as installing a few Python extensions, for now. The client must have the latest Python
+installation, and the Python extensions used in the client.py, but you can use the Py2Exe to create
 an executable.
 
 #### Edit client.py file
 * Line 17, required, put your local or public IP address
 * Line 18, optional, default port: 443
 * Line 26, 29, optional, default port is: 4444, you can change it to whatever you like.
-* Line 40, optional, recommeneded not to change to other SMTP server than gmail, as well as its port.
-* Line 42, 44, reqiured for sending screenshots back to you though email account, change the sender and recived Gmail account, line 42 requires your Gmail credientials,
+* Line 40, optional, recommended not to change to other SMTP servers than Gmail, as well as its port.
+* Line 42, 44, required for sending screenshots back to you through an email account, change the sender and receiver Gmail account, line 42 requires your Gmail credentials,
   For security reasons, open a new Gmail account, and enable "Less secure apps" in your account settings, use this [helpful arcticle](https://hotter.io/docs/email-accounts/secure-app-gmail/)
-* Line 48, recommeneded, if you ever wanted to record victim's microphone, you will need to set the amount of time to record, you won't be able to change this option after second in to the victim, please keep it in mind.
+* Line 48, recommended, if you ever wanted to record the victim's microphone, you will need to set the amount of time to record, you won't be able to change this option after second into the victim, please keep it in mind.
 
 #### Edit vipervenom.py file
 * Line 54, optional, default port: 443
@@ -66,7 +66,7 @@ an executable.
 $ Python3 client.py
 ```
 
-##### Install Python Extention for client.py:
+##### Install Python Extensions for client.py:
 * pillow
 * vidstream
 * socket
@@ -87,7 +87,7 @@ $ Python3 client.py
 ```
 screenshare
 ```
-Screenshares victim's computer screen and sends it to the attacker in real-time.
+Screenshares the victim's computer screen and sends it to the attacker in real-time.
 ```
 webcam_stream
 ```
@@ -109,12 +109,12 @@ Known bug: You won't be able to type more commands after executing this command,
 ```
 vid_record
 ```
-Record victim's screen for an amount of time you set.
+Record victim's screen for the amount of time you set.
 Known bug: You won't be able to type more commands after executing this command, we're working on a fix.
 
 # Contact Us
 For more detailed information on developing ViperVenom, please contact us at [our website][https://revise7.com/contacts/]. 
-
+Revise7 does not take any responsibility in misuse, or for illegal purposes, we cannot control the tool if it goes to the wrong hand as it doesn't have a kill switch.
 
 [Revise7]: https://revise7.com
 [Download file]: https://github.com/Revise7/ViperVenom/archive/refs/heads/main.zip
