@@ -15,8 +15,8 @@ Keep in mind, the tool is currently in beta, bugs may happen.
 To create the latest tool for your platform from this source repository:
 
 ##### Install Python Extensions for vipervenom.py:
-* Socket
-* Time
+* socket
+* time
 * platform
 * os
 * threading
@@ -48,6 +48,15 @@ and as well as installing a few Python extentions, for now. The client must have
 installation, and the Python extentions used in the client.py, but you can use the Py2Exe to create
 an executable.
 
+#### Edit client.py file
+* Line 17, required, put your local or public IP address
+* Line 18, optional, default port: 443
+* Line 26, 29, optional, default port is: 4444, you can change it to whatever you like.
+* Line 40, optional, recommeneded not to change to other SMTP server than gmail, as well as its port.
+* Line 42, 44, reqiured for sending screenshots back to you though email account, change the sender and recived Gmail account, line 42 requires your Gmail credientials,
+  For security reasons, open a new Gmail account, and enable "Less secure apps" in your account settings, use this [helpful arcticle](https://hotter.io/docs/email-accounts/secure-app-gmail/)
+
+
 ##### To connect your target computer:
 ```
 $ Python3 client.py
@@ -70,7 +79,25 @@ $ Python3 client.py
 * numpy
 * pyaudiogui
 
-##### Special Commands
+## Special Commands
+```
+screenshare
+```
+Screenshares victim's computer screen and sends it to the attacker in real-time.
+```
+webcam_stream
+```
+Streams victim's webcam.
+```
+screenshot
+```
+Screenshots victim's computer and sends it directly to your Gmail account as base64 encoded image, decrypt it using the decode_image.py
+that comes with ViperVenom and paste the base64 string in base64.txt and run the Python file
+```
+$ python code_image.py
+```
+The screenshot should appear in ViperVenom's folder in a .png file.
+
 
 ### User Scripts and Extensions
 Ghidra installations support users writing custom scripts and extensions via the *GhidraDev* plugin 
