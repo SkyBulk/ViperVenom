@@ -15,7 +15,7 @@ please refer to `docs/InstallationGuide.html` which can be found in your extract
 directory. 
 Keep in mind, the tool is currently in beta, bugs may happen.
 
-## Build
+## Install Tool
 
 To create the latest tool for your platform from this source repository:
 
