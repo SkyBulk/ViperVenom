@@ -2,67 +2,52 @@
 
 # ViperVenom Spyware Tool for Pentesters
 
-Ghidra is a software reverse engineering (SRE) framework created and maintained by the 
-[Revise7 Security](https://revise7.com) Research Directorate. This framework includes a suite of 
-full-featured, high-end software analysis tools that enable users to analyze compiled code on a 
-variety of platforms including Windows, macOS, and Linux. Capabilities include disassembly, 
-assembly, decompilation, graphing, and scripting, along with hundreds of other features. Ghidra 
-supports a wide variety of processor instruction sets and executable formats and can be run in both 
-user-interactive and automated modes. Users may also develop their own Ghidra extension components 
-and/or scripts using Java or Python.
+ViperVenom is an open-source cyber offensive tool developed by [Revise7 Security](https://revise7.com)
+for pentesters, the tool has the ability to webcam record, screenshot, screenshare and
+screen video record in high-quality.
+ViperVenom is a great tool when it comes to pentesting assessments, as some sort of a proof
+that you broke it to a computer and was able to install ViperVenom to capture the screen
 
-In support of NSA's Cybersecurity mission, Ghidra was built to solve scaling and teaming problems 
-on complex SRE efforts, and to provide a customizable and extensible SRE research platform. NSA has 
-applied Ghidra SRE capabilities to a variety of problems that involve analyzing malicious code and 
-generating deep insights for SRE analysts who seek a better understanding of potential 
-vulnerabilities in networks and systems.
-
-If you are a U.S. citizen interested in projects like this, to develop Ghidra and other 
-cybersecurity tools for NSA to help protect our nation and its allies, consider applying for a 
-[career with us][career].
-
-## Install
-To install an official pre-built multi-platform Ghidra release:  
-* Install [JDK 11 64-bit][jdk11]
-* Download a Ghidra release file from [ghidra-sre.org][project]
-* Extract the Ghidra release file
-* Launch Ghidra: `./ghidraRun` (or `ghidraRun.bat` for Windows)
+Help us improve the tool by [contacting us](https://revise7.com/contacts/), or by sending an [issue](https://github.com/Revise7/ViperVenom/issues)
 
 For additional information and troubleshooting tips about installing and running a Ghidra release, 
 please refer to `docs/InstallationGuide.html` which can be found in your extracted Ghidra release 
 directory. 
+Keep in mind, the tool is currently in beta, bugs may happen.
 
 ## Build
 
-To create the latest development build for your platform from this source repository:
+To create the latest tool for your platform from this source repository:
 
-##### Install build tools:
-* [JDK 11 64-bit][jdk11]
-* [Gradle][gradle] (minimum v6.0)
-* make, gcc, and g++ (Linux/macOS-only)
-* [Microsoft Visual Studio][vs] (Windows-only)
+##### Install Python Extensions:
+* Socket
+* Time
+* platform
+* os
+* threading
+* termcolor
+* vidstream
 
 ##### Download and extract the source:
-[Download from GitHub][master]
+[Download Directly from GitHub][master]
 ```
-$ unzip ghidra-master
-$ cd ghidra-master
+$ unzip vipervenom-master
+$ cd vipervenom-master
 ```
 **NOTE:** Instead of downloading the compressed source, you may instead want to clone the GitHub 
-repository: `git clone https://github.com/NationalSecurityAgency/ghidra.git`
-
-##### Download additional build dependencies into source repository: 
+repository:
 ```
-$ gradle -I gradle/support/fetchDependencies.gradle init
+https://github.com/Revise7/ViperVenom.git
+cd ViperVenom
+pip3 install -r requirements.txt
+python3 vipervenom.py
 ```
 
-##### Create development build: 
+##### ViperVenom's client.py file: 
 ```
 $ gradle buildGhidra
 ```
-The compressed development build will be located at `build/dist/`.
-
-For more detailed information on building Ghidra, please read the [Developer Guide][devguide].  
+In order to connect computer to the listener(you, most likely)
 
 ## Develop
 
@@ -96,21 +81,8 @@ $ gradle prepdev eclipse buildNatives_linux64
 When Eclipse finishes building the projects, Ghidra can be launched and debugged with the provided
 **Ghidra** Eclipse *run configuration*.
 
-For more detailed information on developing Ghidra, please read the [Developer Guide][devguide]. 
-
-## Contribute
-If you would like to contribute bug fixes, improvements, and new features back to Ghidra, please 
-take a look at our [Contributor Guide][contrib] to see how you can participate in this open 
-source project.
+For more detailed information on developing ViperVenom, please contact us at [our website][https://revise7.com/contacts/]. 
 
 
-[nsa]: https://www.nsa.gov
-[contrib]: CONTRIBUTING.md
-[devguide]: DevGuide.md
-[career]: https://www.intelligencecareers.gov/nsa
-[project]: https://www.ghidra-sre.org/
-[jdk11]: https://adoptopenjdk.net/releases.html?variant=openjdk11&jvmVariant=hotspot
-[gradle]: https://gradle.org/releases/
-[vs]: https://visualstudio.microsoft.com/vs/community/
-[eclipse]: https://www.eclipse.org/downloads/packages/
-[master]: https://github.com/NationalSecurityAgency/ghidra/archive/refs/heads/master.zip
+[Revise7]: https://revise7.com
+[Download file]: https://github.com/Revise7/ViperVenom/archive/refs/heads/main.zip
