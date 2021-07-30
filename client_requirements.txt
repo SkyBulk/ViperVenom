@@ -1,0 +1,15 @@
+pillow
+vidstream
+socket
+getpass
+smtplib
+base64
+os
+platform
+sounddevice
+scipy
+time
+subprocess
+cv2
+numpy
+pyaudiogui
