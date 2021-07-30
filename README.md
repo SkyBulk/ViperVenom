@@ -1,4 +1,4 @@
-<img src="Ghidra/Features/Base/src/main/resources/images/GHIDRA_3.png" width="400">
+<img src="https://revise7.com/wp-content/uploads/2021/05/siteLogo1.png" width="400">
 
 # Ghidra Software Reverse Engineering Framework
 
