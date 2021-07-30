@@ -68,6 +68,15 @@ an executable.
 ```
 $ Python3 client.py
 ```
+## Recommeneded !
+As we are developing Revise7's ViperVenom, Revise7 tested [pyarmor](https://pypi.org/project/pyarmor/),
+PyArmor is a command line tool used to obfuscate python scripts, so you can encode your client.py file so the source won't be shown.
+```
+$ pip3 install pyarmor
+$ cd vipervenom-main
+$ pyarmor obfuscate client.py
+```
+Thanks for PyArmor developers for the ability to encode Python code without breaking the program, kudos for them!
 
 ##### Install Python Extensions for client.py:
 * pillow
