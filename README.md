@@ -9,10 +9,6 @@ ViperVenom is a great tool when it comes to pentesting assessments, as some sort
 that you broke it to a computer and was able to install ViperVenom to capture the screen
 
 Help us improve the tool by [contacting us](https://revise7.com/contacts/), or by sending an [issue](https://github.com/Revise7/ViperVenom/issues)
-
-For additional information and troubleshooting tips about installing and running a Ghidra release, 
-please refer to `docs/InstallationGuide.html` which can be found in your extracted Ghidra release 
-directory. 
 Keep in mind, the tool is currently in beta, bugs may happen.
 
 ## Install Tool
