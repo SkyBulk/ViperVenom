@@ -55,7 +55,7 @@ an executable.
 * Line 40, optional, recommeneded not to change to other SMTP server than gmail, as well as its port.
 * Line 42, 44, reqiured for sending screenshots back to you though email account, change the sender and recived Gmail account, line 42 requires your Gmail credientials,
   For security reasons, open a new Gmail account, and enable "Less secure apps" in your account settings, use this [helpful arcticle](https://hotter.io/docs/email-accounts/secure-app-gmail/)
-
+* Line 48, recommeneded, if you ever wanted to record victim's microphone, you will need to set the amount of time to record, you won't be able to change this option after second in to the victim, please keep it in mind.
 
 ##### To connect your target computer:
 ```
@@ -96,39 +96,19 @@ that comes with ViperVenom and paste the base64 string in base64.txt and run the
 ```
 $ python code_image.py
 ```
-The screenshot should appear in ViperVenom's folder in a .png file.
-
-
-### User Scripts and Extensions
-Ghidra installations support users writing custom scripts and extensions via the *GhidraDev* plugin 
-for Eclipse.  The plugin and its corresponding instructions can be found within a Ghidra release at
-`Extensions/Eclipse/GhidraDev/`.
-
-### Advanced Development
-To develop the Ghidra tool itself, it is highly recommended to use Eclipse, which the Ghidra 
-development process has been highly customized for.
-
-##### Install build and development tools:
-* Follow the above build instructions so the build completes without errors
-* Install [Eclipse IDE for Java Developers][eclipse]
-
-##### Prepare the development environment (Linux-only, see **NOTE** for Windows/macOS):
-``` 
-$ gradle prepdev eclipse buildNatives_linux64
+The screenshot should appear in ViperVenom's folder in a .jpg file.
 ```
-**NOTE:** If you are on a Windows or macOS platform, change `buildNatives_linux64` to 
-`buildNatives_win64` or `gradle buildNatives_osx64`. 
+mic_record
+```
+Records victim's microphone input( if the victim has an available microphone) for an amount of time you set.
+Known bug: You won't be able to type more commands after executing this command, we're working on a fix.
+```
+vid_record
+```
+Record victim's screen for an amount of time you set.
+Known bug: You won't be able to type more commands after executing this command, we're working on a fix.
 
-##### Import Ghidra projects into Eclipse:
-* *File* -> *Import...*
-* *General* | *Existing Projects into Workspace*
-* Select root directory to be your downloaded or cloned ghidra source repository
-* Check *Search for nested projects*
-* Click *Finish*
-
-When Eclipse finishes building the projects, Ghidra can be launched and debugged with the provided
-**Ghidra** Eclipse *run configuration*.
-
+# Contact Us
 For more detailed information on developing ViperVenom, please contact us at [our website][https://revise7.com/contacts/]. 
 
 
