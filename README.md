@@ -24,10 +24,10 @@ To create the latest tool for your platform from this source repository:
 * vidstream
 
 ##### Download and extract the source:
-[Download Directly from GitHub][master]
+[Download Directly from GitHub][https://github.com/Revise7/ViperVenom/archive/refs/heads/main.zip]
 ```
-$ unzip vipervenom-master
-$ cd vipervenom-master
+$ unzip main.zip
+$ cd main
 ```
 **NOTE:** Instead of downloading the compressed source, you may instead want to clone the GitHub 
 repository:
@@ -113,7 +113,7 @@ Record victim's screen for the amount of time you set.
 Known bug: You won't be able to type more commands after executing this command, we're working on a fix.
 
 # Contact Us
-For more detailed information on developing ViperVenom, please contact us at [our website][https://revise7.com/contacts/]. 
+For more detailed information on developing ViperVenom, please contact us at [our website](https://revise7.com/contacts). 
 Revise7 does not take any responsibility in misuse, or for illegal purposes, we cannot control the tool if it goes to the wrong hand as it doesn't have a kill switch.
 
 [Revise7]: https://revise7.com
