@@ -29,8 +29,8 @@ To fix this issue, check out [stackoverflow](https://stackoverflow.com/questions
 ##### Download and extract the source:
 [Download Directly from GitHub](https://github.com/Revise7/ViperVenom/archive/refs/heads/main.zip)
 ```
-$ unzip vipervenom-main.zip
-$ cd vipervenom-main
+$ unzip ViperVenom-main.zip
+$ cd ViperVenom-main
 ```
 **NOTE:** Instead of downloading the compressed source, you may instead want to clone the GitHub 
 repository:
