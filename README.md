@@ -27,7 +27,7 @@ To create the latest tool for your platform from this source repository:
 To fix this issue, check out [stackoverflow](https://stackoverflow.com/questions/53866104/pyaudio-failed-to-install-windows-10/53866322)
 
 ##### Download and extract the source:
-[Download Directly from GitHub][https://github.com/Revise7/ViperVenom/archive/refs/heads/main.zip]
+[Download Directly from GitHub](https://github.com/Revise7/ViperVenom/archive/refs/heads/main.zip)
 ```
 $ unzip main.zip
 $ cd main
