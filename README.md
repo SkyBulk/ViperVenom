@@ -1,6 +1,6 @@
 <img src="https://revise7.com/wp-content/uploads/2021/07/Logo2.svg" width="400">
 
-# Ghidra Software Reverse Engineering Framework
+# ViperVenom Spyware Tool for Pentesters
 
 Ghidra is a software reverse engineering (SRE) framework created and maintained by the 
 [National Security Agency][nsa] Research Directorate. This framework includes a suite of 
