@@ -121,8 +121,7 @@ Known bug: You won't be able to type more commands after executing this command,
 ```
 vid_record
 ```
-Record victim's screen for the amount of time you set.
-Known bug: You won't be able to type more commands after executing this command, we're working on a fix.
+Record victim's screen for the amount of time you set. (Not Available, Under Development)
 
 # Contact Us
 For more detailed information on developing ViperVenom, please contact us at [our website](https://revise7.com/contacts). 
