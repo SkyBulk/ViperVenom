@@ -26,9 +26,6 @@ To create the latest tool for your platform from this source repository:
 * termcolor
 * vidstream
 
-## Error while installing pyaudio
-To fix this issue, check out [stackoverflow](https://stackoverflow.com/questions/53866104/pyaudio-failed-to-install-windows-10/53866322)
-
 ##### Download and extract the source:
 [Download Directly from GitHub](https://github.com/Revise7/ViperVenom/archive/refs/heads/main.zip)
 ```
@@ -42,6 +39,12 @@ $ https://github.com/Revise7/ViperVenom.git
 $ cd ViperVenom
 $ pip3 install -r requirements.txt
 $ python3 vipervenom.py
+```
+## Error while installing pyaudio
+To fix this issue, check out [stackoverflow](https://stackoverflow.com/questions/53866104/pyaudio-failed-to-install-windows-10/53866322)
+After you fixed the issue, try installing vidstream again.
+```
+pip3 install vidstream
 ```
 
 ##### ViperVenom's client.py file: 
