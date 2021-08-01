@@ -11,6 +11,9 @@ that you broke it to a computer and was able to install ViperVenom to capture th
 Help us improve the tool by [contacting us](https://revise7.com/contacts/), or by sending an [issue](https://github.com/Revise7/ViperVenom/issues)
 Keep in mind, the tool is currently in beta, bugs may happen.
 
+## Important!
+Please do not test ViperVenom on VirusTotal, instead, test it on a website like [NoDistribute](https://nodistribute.com/)
+
 ## Install Tool
 To create the latest tool for your platform from this source repository:
 
