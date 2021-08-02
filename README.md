@@ -44,7 +44,7 @@ $ python3 vipervenom.py
 To fix this issue, check out [stackoverflow](https://stackoverflow.com/questions/53866104/pyaudio-failed-to-install-windows-10/53866322)
 After you fixed the issue, try installing vidstream again.
 ```
-pip3 install vidstream
+$ pip3 install vidstream
 ```
 
 ##### ViperVenom's client.py file: 
