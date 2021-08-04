@@ -1,7 +1,2 @@
-socket
-time
-platform
-os
-threading
 termcolor
 vidstream
