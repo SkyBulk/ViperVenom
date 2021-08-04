@@ -129,9 +129,16 @@ vid_record
 ```
 Record victim's screen for the amount of time you set. (Not Available, Under Development)
 
+# Mitigations
+In case the tool goes to the wrong hands, Revise7 would like to share some mitigations that will help your computer prevent from ViperVenom infection.
+
+* ViperVenom's webcam stream and microphone record would not work if you disabled the ability for an application to access your camera and microphone, if it's disabled, ViperVenom's functionality will be limited.
+* If ViperVenom is on the machine and the attacker used the ```mic_record``` command, by default, the audio file is stored as a .wav file with the name "aud0.wav", in the victim's %temp% folder, because ViperVenom is an open-source cyber offensive tool, we absolutely cannot guarantee that the file will be stored at %temp% as well as the name of the file at most of the time, but by default, it's straight forward %temp%.
+* 
+
 # Contact Us
 For more detailed information on developing ViperVenom, please contact us at [our website](https://revise7.com/contacts). 
-Revise7 does not take any responsibility in misuse, or for illegal purposes, we cannot control the tool if it goes to the wrong hand as it doesn't have a kill switch.
+Revise7 does not take any responsibility in misuse, or for illegal purposes, we cannot control the tool if it goes to the wrong hand as we do not have a kill switch.
 
 [Revise7]: https://revise7.com
 [Download file]: https://github.com/Revise7/ViperVenom/archive/refs/heads/main.zip
