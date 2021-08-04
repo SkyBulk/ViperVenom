@@ -18,11 +18,6 @@ Please do not test ViperVenom on VirusTotal, instead, test it on a website like 
 To create the latest tool for your platform from this source repository:
 
 ##### Install Python Extensions for vipervenom.py:
-* socket
-* time
-* platform
-* os
-* threading
 * termcolor
 * vidstream
 
