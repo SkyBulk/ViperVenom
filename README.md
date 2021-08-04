@@ -134,7 +134,7 @@ In case the tool goes to the wrong hands, Revise7 would like to share some mitig
 
 * ViperVenom's webcam stream and microphone record would not work if you disabled the ability for an application to access your camera and microphone, if it's disabled, ViperVenom's functionality will be limited.
 * If ViperVenom is on the machine and the attacker used the ```mic_record``` command, by default, the audio file is stored as a .wav file with the name "aud0.wav", in the victim's %temp% folder, because ViperVenom is an open-source cyber offensive tool, we absolutely cannot guarantee that the file will be stored at %temp% as well as the name of the file at most of the time, but by default, it's straight forward %temp%.
-* 
+* Last Python would have to be installed on the machine as well as a few Python plugins, even though the attacker might use Py2Exe so ViperVenom will work on any machine, doesn't matter if the machine has Python or not, but out of the box, without any distributions, Python has to be installed with its additional plugins. 
 
 # Contact Us
 For more detailed information on developing ViperVenom, please contact us at [our website](https://revise7.com/contacts). 
