@@ -87,19 +87,10 @@ Thanks for PyArmor developers for the ability to encode Python code without brea
 ##### Install Python Extensions for client.py:
 * pillow
 * vidstream
-* socket
-* getpass
-* smtplib
-* base64
-* os
-* platform
 * sounddevice
 * scipy
-* time
-* subprocess
-* cv2
 * numpy
-* pyaudiogui
+* pipwin
 
 ## Special Commands
 ```
