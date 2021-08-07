@@ -1,0 +1,6 @@
+pillow
+vidstream
+sounddevice
+scipy
+numpy
+pipwin
