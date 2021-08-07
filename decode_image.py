@@ -1,3 +1,4 @@
+# Use this small tool when you need to decrypt a base64 image and write it to an image.
 import base64
 f=open('base64.txt', 'r')
 string=f.read()
