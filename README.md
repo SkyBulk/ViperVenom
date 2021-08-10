@@ -53,8 +53,7 @@ installation, and the Python extensions used in the client file, but you can use
 an executable.
 
 #### Edit vipervenom.py file
-* Line 54, optional, default port: 443
-* Line 66, optional, probably keep it as it is, default port: 4444, if you will edit this, you will need to edit client file, lines 26 and 29 to the same port.
+* Line 65, optional, default port: 443
 
 ##### To connect your target computer:
 ```
