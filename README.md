@@ -42,44 +42,35 @@ After you fixed the issue, try installing vidstream again.
 $ pip3 install vidstream
 ```
 
-##### ViperVenom's client.py file: 
+##### ViperVenom's Client Requirements: 
 ```
-$ gedit client.py
+$ gedit <payload_name>.py
 $ pip3 install -r client_requirements.txt
 ```
 To connect a computer to the listener(you, most likely) you need to edit a few things in the file
 and as well as installing a few Python extensions, for now. The client must have the latest Python
-installation, and the Python extensions used in the client.py, but you can use the Py2Exe to create
+installation, and the Python extensions used in the client file, but you can use the Py2Exe to create
 an executable.
-
-#### Edit client.py file
-* Line 17, required, put your local or public IP address
-* Line 18, optional, default port: 443
-* Line 26, 29, optional, default port is: 4444, you can change it to whatever you like.
-* Line 40, optional, recommended not to change to other SMTP servers than Gmail, as well as its port.
-* Line 42, 44, required for sending screenshots back to you through an email account, change the sender and receiver Gmail account, line 42 requires your Gmail credentials,
-  For security reasons, open a new Gmail account, and enable "Less secure apps" in your account settings, use this [helpful arcticle](https://hotter.io/docs/email-accounts/secure-app-gmail/)
-* Line 48, recommended, if you ever wanted to record the victim's microphone, you will need to set the amount of time to record, you won't be able to change this option after second into the victim, please keep it in mind.
 
 #### Edit vipervenom.py file
 * Line 54, optional, default port: 443
-* Line 66, optional, probably keep it as it is, default port: 4444, if you will edit this, you will need to edit client.py, lines 26 and 29 to the same port.
+* Line 66, optional, probably keep it as it is, default port: 4444, if you will edit this, you will need to edit client file, lines 26 and 29 to the same port.
 
 ##### To connect your target computer:
 ```
-$ Python3 client.py
+$ Python3 <payload_name>.py
 ```
 ## Recommeneded !
 As we are developing Revise7's ViperVenom, Revise7 tested [pyarmor](https://pypi.org/project/pyarmor/),
-PyArmor is a command line tool used to obfuscate python scripts, so you can encode your client.py file so the source won't be shown.
+PyArmor is a command line tool used to obfuscate python scripts, so you can encode your client file so the source won't be shown.
 ```
 $ pip3 install pyarmor
 $ cd vipervenom-main
-$ pyarmor obfuscate client.py
+$ pyarmor obfuscate payload_name.py
 ```
 Thanks for PyArmor developers for the ability to encode Python code without breaking the program, kudos for them!
 
-##### Install Python Extensions for client.py:
+##### Install Python Extensions for The Client File:
 * pillow
 * vidstream
 * sounddevice
@@ -114,13 +105,6 @@ Known bug: You won't be able to type more commands after executing this command,
 vid_record
 ```
 Record victim's screen for the amount of time you set. (Not Available, Under Development)
-
-# Mitigations
-In case the tool goes to the wrong hands, Revise7 would like to share some mitigations that will help your computer prevent from ViperVenom infection.
-
-* ViperVenom's webcam stream and microphone record would not work if you disabled the ability for an application to access your camera and microphone, if it's disabled, ViperVenom's functionality will be limited.
-* If ViperVenom is on the machine and the attacker used the ```mic_record``` command, by default, the audio file is stored as a .wav file with the name "aud0.wav", in the victim's %temp% folder, because ViperVenom is an open-source cyber offensive tool, we absolutely cannot guarantee that the file will be stored at %temp% as well as the name of the file at most of the time, but by default, it's straight forward %temp%.
-* Latest Python version would have to be installed on the machine as well as a few Python plugins, even though the attacker might use Py2Exe so ViperVenom will work on any machine, doesn't matter if the machine has Python or not, but out of the box, without any distributions, Python has to be installed with its additional plugins. 
 
 # Contact Us
 For more detailed information on developing ViperVenom, please contact us at [our website](https://revise7.com/contacts). 
