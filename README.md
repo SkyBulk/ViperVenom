@@ -12,7 +12,7 @@ Help us improve the tool by [contacting us](https://revise7.com/contacts/), or b
 Keep in mind, the tool is currently in beta, bugs may happen.
 
 ## Important!
-Please do not test ViperVenom on VirusTotal, instead, test it on a website like [NoDistribute](https://nodistribute.com/)
+Please do not test ViperVenom on VirusTotal, instead, test it on a website like [AntiScan.me](https://antiscan.me/)
 
 ## Install Tool
 To create the latest tool for your platform from this source repository:
