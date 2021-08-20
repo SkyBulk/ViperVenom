@@ -34,7 +34,6 @@ $ python3 vipervenom.py
 
 ##### ViperVenom's Client Requirements: 
 ```
-$ gedit <payload_name>.py
 $ pip3 install -r client_requirements.txt
 ```
 To connect a computer to the listener(you, most likely) you need to install a few Python extensions, for now. The client must have the latest Python
@@ -51,7 +50,7 @@ PyArmor is a command line tool used to obfuscate python scripts, so you can enco
 ```
 $ pip3 install pyarmor
 $ cd vipervenom-main
-$ pyarmor obfuscate payload_name.py
+$ pyarmor obfuscate <payload_name>.py
 ```
 Thanks for PyArmor developers for the ability to encode Python code without breaking the program, kudos for them!
 
