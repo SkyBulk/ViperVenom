@@ -17,10 +17,6 @@ Please do not test ViperVenom on VirusTotal, instead, test it on a website like 
 ## Install Tool
 To create the latest tool for your platform from this source repository:
 
-##### Install Python Extensions for vipervenom.py:
-* termcolor
-* vidstream
-
 ##### Download and extract the source:
 [Download Directly from GitHub](https://github.com/Revise7/ViperVenom/archive/refs/heads/main.zip)
 ```
@@ -35,25 +31,15 @@ $ cd ViperVenom
 $ pip3 install -r requirements.txt
 $ python3 vipervenom.py
 ```
-## Error while installing pyaudio
-To fix this issue, check out [stackoverflow](https://stackoverflow.com/questions/53866104/pyaudio-failed-to-install-windows-10/53866322)
-After you fixed the issue, try installing vidstream again.
-```
-$ pip3 install vidstream
-```
 
 ##### ViperVenom's Client Requirements: 
 ```
 $ gedit <payload_name>.py
 $ pip3 install -r client_requirements.txt
 ```
-To connect a computer to the listener(you, most likely) you need to edit a few things in the file
-and as well as installing a few Python extensions, for now. The client must have the latest Python
-installation, and the Python extensions used in the client file, but you can use the Py2Exe to create
+To connect a computer to the listener(you, most likely) you need to install a few Python extensions, for now. The client must have the latest Python
+installation, and the Python extensions used in the client file, but you can use a Python compiler to create
 an executable.
-
-#### Edit vipervenom.py file
-* Line 65, optional, default port: 443
 
 ##### To connect your target computer:
 ```
@@ -71,39 +57,24 @@ Thanks for PyArmor developers for the ability to encode Python code without brea
 
 ##### Install Python Extensions for The Client File:
 * pillow
-* vidstream
 * sounddevice
 * scipy
-* numpy
-* pipwin
 
 ## Special Commands
-```
-screenshare
-```
-Screenshares the victim's computer screen and sends it to the attacker in real-time.
-```
-webcam_stream
-```
-Streams victim's webcam.
 ```
 screenshot
 ```
 Screenshots victim's computer and sends it directly to your Gmail account as base64 encoded image, decrypt it using the decode_image.py
-that comes with ViperVenom and paste the base64 string in base64.txt and run the Python file
+that comes with ViperVenom and paste the base64 string in base64.txt and run the Python file, base64 and decode_image.py are in "Tools" folder.
 ```
 $ python3 decode_image.py
 ```
 The screenshot should appear in ViperVenom's folder in a .jpg file.
 ```
-mic_record
+mic record
 ```
 Records victim's microphone input( if the victim has an available microphone) for an amount of time you set.
 Known bug: You won't be able to type more commands after executing this command, we're working on a fix.
-```
-vid_record
-```
-Record victim's screen for the amount of time you set. (Not Available, Under Development)
 
 # Contact Us
 For more detailed information on developing ViperVenom, please contact us at [our website](https://revise7.com/contacts). 
