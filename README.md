@@ -59,6 +59,31 @@ Thanks for PyArmor developers for the ability to encode Python code without brea
 * sounddevice
 * scipy
 
+# Starting Listener (Updated 21/08/2021)
+
+After starting the software, to see which options are available, type "list" or "show list", the list of available options will be printed out
+```
+Landing/ViperVenom/ > show list
+
+1 | Start Handler Listener                             
+
+2 | Generate ViperVenom Payload
+```
+To use the listener option in the list, type
+```
+use 1
+Landing/ViperVenom/ > use 1
+/ViperVenom/ > 
+```
+After selecting 1, to view available payloads, type
+```
+show payloads
+```
+You should brought to the listener page
+```
+
+
+
 ## Special Commands
 ```
 screenshot
