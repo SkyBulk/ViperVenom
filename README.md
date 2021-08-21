@@ -68,7 +68,7 @@ that comes with ViperVenom and paste the base64 string in base64.txt and run the
 ```
 $ python3 decode_image.py
 ```
-The screenshot should appear in ViperVenom's folder in a .jpg file.
+The screenshot should appear in ViperVenom's Tool folder as a .jpg file.
 ```
 mic record
 ```
